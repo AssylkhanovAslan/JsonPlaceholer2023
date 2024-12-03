@@ -8,33 +8,29 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp">
+
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        >
 
         <TextView
             android:id="@+id/tv_comment_name"
+            android:text="username"
             style="@style/Header2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/text_01"
+            android:textColor="@color/links"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_email_hint"
-            style="@style/Header4"
+            android:id="@+id/tv_comment_date"
+            android:text="2 weeks ago"
+            android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/text_02"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_comment_name" />
-
-        <TextView
-            android:id="@+id/tv_email"
-            style="@style/Header4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/links"
+            android:textColor="@color/text_01"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_comment_name" />
 
@@ -43,11 +39,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:barrierDirection="bottom"
-            app:constraint_referenced_ids="tv_email, tv_email_hint" />
+            app:constraint_referenced_ids="tv_comment_date" />
 
         <TextView
             android:id="@+id/tv_body"
             style="@style/Body1"
+            android:text="content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"

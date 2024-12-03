@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/ic_profile" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="Email"
+            android:textColor="@color/text_01"
+            android:textColorHint="@color/text_02"
+            android:textSize="15sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="12dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/email_input"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/username"
+            android:textColor="@color/text_01"
+            android:textColorHint="@color/text_02"
+            android:textSize="15sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="12dp"
+            android:inputType="text"
+            android:id="@+id/username_input"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="First Name"
+            android:textColor="@color/text_01"
+            android:textColorHint="@color/text_02"
+            android:textSize="15sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="12dp"
+            android:inputType="text"
+            android:id="@+id/firstname_input"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Last Name"
+            android:textColor="@color/text_01"
+            android:textColorHint="@color/text_02"
+            android:textSize="15sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="12dp"
+            android:inputType="text"
+            android:id="@+id/lastname_input"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Password"
+            android:textColor="@color/text_01"
+            android:textColorHint="@color/text_02"
+            android:textSize="15sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:id="@+id/password_input"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Repeat Password"
+            android:textColor="@color/text_01"
+            android:textColorHint="@color/text_02"
+            android:textSize="15sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:id="@+id/repeat_password_input"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/ui_01"
+            android:textColor="@color/text_01"
+            android:padding="12dp"
+            android:layout_marginTop="32dp"
+            android:textSize="15sp"
+            android:id="@+id/register_btn"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

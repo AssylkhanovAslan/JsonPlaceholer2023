@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "JsonPlaceholder Typicode"
+rootProject.name = "Nedid"
 include ':app'

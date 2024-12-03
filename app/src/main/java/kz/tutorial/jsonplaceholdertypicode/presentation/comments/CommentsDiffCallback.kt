@@ -6,7 +6,7 @@ import kz.tutorial.jsonplaceholdertypicode.domain.entity.Comment
 
 class CommentsDiffCallback : DiffUtil.ItemCallback<Comment>() {
     override fun areItemsTheSame(p0: Comment, p1: Comment): Boolean {
-        return p0.id == p1.id
+        return p0.userId == p1.userId
     }
 
     override fun areContentsTheSame(p0: Comment, p1: Comment): Boolean {

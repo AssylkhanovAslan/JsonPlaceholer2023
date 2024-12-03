@@ -6,15 +6,16 @@
         android:icon="@drawable/ic_posts"
         />
     <item
-        android:id="@+id/menu_albums"
-        android:title="@string/albums"
+        android:id="@+id/add_post"
+        android:title="@string/add_post"
         android:icon="@drawable/ic_albums"
         />
-    <item
-        android:id="@+id/menu_users"
-        android:title="@string/users"
-        android:icon="@drawable/ic_users"
-        />
+<!--    -->
+<!--    <item-->
+<!--        android:id="@+id/menu_users"-->
+<!--        android:title="@string/users"-->
+<!--        android:icon="@drawable/ic_users"-->
+<!--        />-->
     <item
         android:id="@+id/menu_profile"
         android:title="@string/profile"

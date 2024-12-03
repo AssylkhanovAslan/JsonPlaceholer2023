@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">JsonPlaceholder Typicode</string>
+    <string name="app_name">Nedid</string>
     <string name="by">By:</string>
     <string name="comments">Comments</string>
     <string name="show_all">Show All</string>
@@ -7,4 +7,10 @@
     <string name="albums">Albums</string>
     <string name="users">Users</string>
     <string name="profile">Profile</string>
+    <string name="username">Username</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_post">Add post</string>
+    <string name="add_post_author">Author:  </string>
+    <string name="Name">Name</string>
+    <string name="last_comments">Last comments</string>
 </resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_second"
+    app:startDestination="@id/menu_posts">
+
+    <fragment
+        android:id="@+id/menu_posts"
+        android:name="kz.tutorial.jsonplaceholdertypicode.presentation.posts.PostsFragment">
+        <action
+            android:id="@+id/to_post_details"
+            app:destination="@+id/post_details" />
+        <action
+            android:id="@+id/action_menu_posts_to_show_all_fragment"
+            app:destination="@id/show_all_fragment" />
+        <action
+            android:id="@+id/action_menu_posts_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/post_details"
+        android:name="kz.tutorial.jsonplaceholdertypicode.presentation.post_details.PostDetailsFragment">
+        <argument
+            android:name="post_id"
+            app:argType="integer"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_post_details_to_showAllFragment"
+            app:destination="@id/show_all_fragment" />
+        <action
+            android:id="@+id/action_post_details_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <action
+            android:id="@+id/action_post_details_to_userProfileFragment2"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_post"
+        android:name="kz.tutorial.jsonplaceholdertypicode.presentation.add_post.AddPostFragment">
+        <action
+            android:id="@+id/action_add_post_to_menu_posts"
+            app:destination="@id/menu_posts" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/show_all_fragment"
+        android:name="kz.tutorial.jsonplaceholdertypicode.presentation.show_all_comments.ShowAllFragment"
+        android:label="ShowAllFragment">
+        <argument
+            android:name="post_id"
+            app:argType="integer"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_show_all_fragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menu_users"
+        android:name="kz.tutorial.jsonplaceholdertypicode.presentation.users.UsersFragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/menu_profile"
+        android:name="kz.tutorial.jsonplaceholdertypicode.presentation.profile.ProfileFragment" />
+
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="kz.tutorial.jsonplaceholdertypicode.presentation.profile.UserProfileFragment"
+        tools:layout="@layout/fragment_user_profile">
+        <argument
+            android:name="user_id"
+            app:argType="integer"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_post_details"
+            app:destination="@id/post_details" />
+    </fragment>
+</navigation>

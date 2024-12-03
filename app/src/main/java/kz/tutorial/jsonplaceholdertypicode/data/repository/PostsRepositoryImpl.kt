@@ -16,7 +16,7 @@ class PostsRepositoryImpl(private val mainApi: MainApi) : PostsRepository {
     }
 
     override suspend fun getPostComments(postId: Int): List<Comment> {
-        return mainApi.getPostComments(postId)
+        return mainApi.getPostComments(postId).reversed()
     }
 
 }
